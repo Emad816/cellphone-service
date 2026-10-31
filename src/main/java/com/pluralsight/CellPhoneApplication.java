@@ -31,6 +31,5 @@ public class CellPhoneApplication {
         System.out.println("Phone number: " + phone1.getPhoneNumber());
         System.out.println("Owner: " + phone1.getOwner());
 
-
     }
 }
