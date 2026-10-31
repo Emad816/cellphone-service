@@ -30,6 +30,6 @@ public class CellPhoneApplication {
         System.out.println("Carrier: " + phone1.getCarrier());
         System.out.println("Phone number: " + phone1.getPhoneNumber());
         System.out.println("Owner: " + phone1.getOwner());
-
+        scanner.close();
     }
 }
