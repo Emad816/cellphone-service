@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class CellPhoneApplication {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        CellPhone cellPhone1, cellPhone2;
+        CellPhone cellPhone1, cellPhone2, cellPhone3;
         cellPhone1 = new CellPhone();
         cellPhone2 = new CellPhone();
+        cellPhone3 = new CellPhone(2026, "iphone", "t", "929-441-4936", "emad");
 
         //added cellphone 2 info for example
         cellPhone2.setOwner("sidra");
@@ -34,7 +35,11 @@ public class CellPhoneApplication {
         cellPhone1.setOwner(scanner.nextLine());
 
         cellPhone1.dial(cellPhone2.getPhoneNumber());
-        cellPhone2.dial(cellPhone2.getPhoneNumber());
+        cellPhone2.dial(cellPhone1.getPhoneNumber());
+
+        display(cellPhone3);
+
+        cellPhone3.dial(cellPhone2);
 
         scanner.close();
     }
